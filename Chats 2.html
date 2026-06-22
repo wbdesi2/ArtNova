@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+
+<title>Chats - ArtNov</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link href="css/chats.css"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<section class="pull-to-refresh">
+
+    <div class="spinner-border text-light"
+         role="status">
+    </div>
+
+</section>
+
+<div class="screen">
+
+
+    <div class="top-bar">
+
+        <div class="filter-dropdown">
+
+    <button
+    class="filter-btn"
+    onclick="toggleFilter()">
+
+        <span id="currentFilter">
+            Todos
+        </span>
+
+        <i class="fa-solid fa-caret-down"></i>
+
+    </button>
+
+    <div
+    id="filterMenu"
+    class="filter-menu">
+
+        <button onclick="selectFilter('Todos')">
+            Todos
+        </button>
+
+        <button onclick="selectFilter('Leídos')">
+            Leídos
+        </button>
+
+        <button onclick="selectFilter('No leídos')">
+            No leídos
+        </button>
+
+        <button onclick="selectFilter('Favoritos')">
+            Favoritos
+        </button>
+
+    </div>
+
+</div>
+
+        <h1>Chat</h1>
+
+        <img
+        src="img/ghbhhh.png"
+        class="profile-top"
+        alt="perfil">
+
+    </div>
+
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+        type="text"
+        placeholder="Buscar">
+
+    </div>
+
+
+    <div class="chat-list"
+		 onclick="location.href='Chats 2.html'">
+
+        <div class="chat-card">
+
+            <img src="img/mist333.png">
+
+            <div class="chat-info">
+
+                <h3>@Neo_city</h3>
+
+                <p>
+                    Te mando una publicación de
+                    @shubabi_oribi
+                </p>
+
+            </div>
+
+            <span>2d</span>
+
+        </div>
+
+        <div class="chat-card">
+
+            <img src="img/ppotrait1.png">
+
+            <div class="chat-info">
+
+                <h3>@Creep_Enthu</h3>
+
+                <p>
+                    Me encanta como dibujas....
+                </p>
+
+            </div>
+
+            <span>4d</span>
+
+        </div>
+
+        <div class="chat-card">
+
+            <img src="img/emilrect.png">
+
+            <div class="chat-info">
+
+                <h3>@War_Lover</h3>
+
+                <p>
+                    Puedes dibujarme la batalla
+                    de Normandía...
+                </p>
+
+            </div>
+
+            <span>1s</span>
+
+        </div>
+
+        <div class="chat-card">
+
+            <img src="img/uigyggyhghghggh.png">
+
+            <div class="chat-info">
+
+                <h3>@Honkai_StarRail</h3>
+
+                <p>
+                    Deberíamos hacer collab...
+                </p>
+
+            </div>
+
+            <span>3m</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="fab">
+
+    <button>
+
+        <i class="fa-solid fa-palette"></i>
+
+    </button>
+
+</div>
+
+
+<nav class="bottom-nav">
+
+    <a href="ArtNov - Home.html">
+        <i class="fa-solid fa-house"></i>
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </a>
+
+    <a href="#">
+        <i class="fa-solid fa-bell"></i>
+    </a>
+
+    <a href="#" class="active">
+
+        <i class="fa-solid fa-comments"></i>
+
+        <span>1</span>
+
+    </a>
+
+</nav>
+<script src="js/ejChat.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

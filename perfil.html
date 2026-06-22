@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Nueva Contraseña</title>
+
+<link rel="stylesheet" href="css/changepss.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="screen">
+
+    <div class="logo">
+        <img src="img/Space-Age-3.png"
+             alt="ARTNOV" width="288" height="168">
+    </div>
+
+    <div class="content">
+
+        <h1>
+            Cambia tu Contraseña
+        </h1>
+
+        <p class="description">
+            Escribe una nueva contraseña para
+            cambiar tu contraseña.
+        </p>
+
+        <!-- NUEVA CONTRASEÑA -->
+
+        <div class="password-box">
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Nueva contraseña">
+
+            <button
+                type="button"
+                class="eye-btn"
+                onclick="togglePassword('password',this)">
+
+                <i class="fa-solid fa-eye"></i>
+
+            </button>
+
+        </div>
+
+        <!-- CONFIRMAR -->
+
+        <div class="password-box">
+
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirma la nueva contraseña">
+
+            <button
+                type="button"
+                class="eye-btn"
+                onclick="togglePassword('confirmPassword',this)">
+
+                <i class="fa-solid fa-eye"></i>
+
+            </button>
+
+        </div>
+
+        <button class="green-btn" onclick="window.location.href='contra-res.html'">
+
+            Cambiar Contraseña
+
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+function togglePassword(id,button)
+{
+    const input =
+    document.getElementById(id);
+
+    const icon =
+    button.querySelector("i");
+
+    if(input.type === "password")
+    {
+        input.type = "text";
+
+        icon.classList.remove(
+            "fa-eye"
+        );
+
+        icon.classList.add(
+            "fa-eye-slash"
+        );
+    }
+    else
+    {
+        input.type = "password";
+
+        icon.classList.remove(
+            "fa-eye-slash"
+        );
+
+        icon.classList.add(
+            "fa-eye"
+        );
+    }
+}
+
+</script>
+
+</body>
+</html>
