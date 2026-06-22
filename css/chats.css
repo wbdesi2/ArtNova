@@ -1,0 +1,356 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#111;
+
+    font-family:'Segoe UI',sans-serif;
+
+    color:white;
+
+    overflow-x:hidden;
+}
+
+.screen{
+	 background-color: #1C1C1C;
+
+    width:390px;
+
+    min-height:100vh;
+
+    margin:auto;
+
+    padding:20px;
+}
+
+
+.top-bar{
+
+    position:relative;
+
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+}
+
+.top-bar h1{
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    margin:0;
+
+    color:white;
+}
+
+.profile-top{
+
+    position:absolute;
+
+    right:0;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+}
+
+
+
+.search-box{
+
+    border:2px solid #d500ff;
+
+    border-radius:30px;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 18px;
+
+    margin-bottom:18px;
+}
+
+.search-box i{
+
+    color:#999;
+}
+
+.search-box input{
+
+    flex:1;
+
+    background:none;
+
+    border:none;
+
+    outline:none;
+
+    color:white;
+
+    margin-left:10px;
+}
+
+
+
+.chat-card{
+
+    background:#2c2c2c;
+
+    border-radius:22px;
+
+    padding:10px;
+
+    display:flex;
+
+    align-items:center;
+
+    margin-bottom:12px;
+}
+
+.chat-card img{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+}
+
+.chat-info{
+
+    flex:1;
+
+    margin-left:12px;
+}
+
+.chat-info h3{
+
+    font-size:22px;
+
+    margin-bottom:4px;
+}
+
+.chat-info p{
+
+    color:#ddd;
+
+    font-size:14px;
+}
+
+.chat-card span{
+
+    color:#ccc;
+}
+
+
+
+.fab{
+
+    position:fixed;
+
+    right:600px;
+
+    bottom:95px;
+
+    z-index:1000;
+}
+
+.fab button{
+
+    width:70px;
+
+    height:70px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#00ff6a;
+
+    color:black;
+
+    font-size:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:
+    0 6px 20px rgba(0,255,106,.35);
+
+    cursor:pointer;
+}
+
+
+.bottom-nav{
+
+    position:fixed;
+
+    bottom:0;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:390px;
+
+    height:75px;
+
+    background:#111;
+
+    border-top:2px solid #d500ff;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+	
+	    z-index:900;
+
+}
+
+.bottom-nav a{
+
+    color:#d500ff;
+
+    font-size:30px;
+
+    position:relative;
+}
+
+.bottom-nav span{
+
+    position:absolute;
+
+    top:-10px;
+
+    right:-10px;
+
+    background:#65ff53;
+
+    color:black;
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    font-size:12px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+
+.filter-dropdown{
+
+    position:relative;
+}
+
+.filter-menu{
+
+    position:absolute;
+
+    top:55px;
+
+    left:0;
+
+    width:170px;
+
+    background:#222;
+
+    border:2px solid #c700ff;
+
+    border-radius:18px;
+
+    display:none;
+
+    z-index:9999;
+}
+
+.filter-btn{
+
+    background:none;
+
+    border:2px solid #00ff6a;
+
+    border-radius:25px;
+
+    color:white;
+
+    padding:8px 14px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    cursor:pointer;
+}
+
+.filter-btn i{
+
+    color:#00ff6a;
+}
+
+
+.filter-menu.show{
+
+    display:block;
+}
+
+.filter-menu button{
+
+    width:100%;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    text-align:left;
+
+    padding:14px 16px;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.filter-menu button:hover{
+
+    background:#333;
+}

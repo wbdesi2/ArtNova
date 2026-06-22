@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: #000;
+}
+
+.splash-screen {
+    position: relative;
+    width: 393px;
+    height: 852px;
+    overflow: hidden;
+}
+
+
+.background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.star {
+    position: absolute;
+    width: 180px;
+    height: auto;
+
+    left: 50%;
+    top: 50%;
+
+    animation: starIntro 3s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.accent {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.accent-top {
+    width: 180px;
+
+    left: 50%;
+    top: calc(50% - 140px);
+
+    transform: translateX(-50%);
+
+    animation: topReveal 1.2s ease-out 2s forwards;
+}
+
+.accent-bottom {
+    width: 180px;
+
+    left: 50%;
+    top: calc(50% + 100px);
+
+    transform: translateX(-50%);
+
+    animation: bottomReveal 1.2s ease-out 2s forwards;
+}
+
+@keyframes starIntro {
+    0% {
+        transform:
+            translate(-50%, -50%)
+            translate(140px, 260px)
+            scale(0.1)
+            rotate(-360deg);
+        opacity: 0;
+    }
+
+    25% {
+        transform:
+            translate(-50%, -50%)
+            translate(70px, 120px)
+            scale(0.5)
+            rotate(-270deg);
+        opacity: 1;
+    }
+
+    60% {
+        transform:
+            translate(-50%, -50%)
+            translate(0px, 0px)
+            scale(1.3)
+            rotate(-45deg);
+    }
+
+    80% {
+        transform:
+            translate(-50%, -50%)
+            translate(0px, 0px)
+            scale(0.95)
+            rotate(10deg);
+    }
+
+    100% {
+        transform:
+            translate(-50%, -50%)
+            translate(0px, 0px)
+            scale(1)
+            rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes topReveal {
+
+    0% {
+        opacity: 0;
+
+        transform:
+            translateX(-50%)
+            translateX(-180px);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform:
+            translateX(-50%)
+            translateX(0);
+    }
+}
+
+@keyframes bottomReveal {
+
+    0% {
+        opacity: 0;
+
+        transform:
+            translateX(-50%)
+            translateX(180px);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform:
+            translateX(-50%)
+            translateX(0);
+    }
+}

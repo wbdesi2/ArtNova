@@ -1,0 +1,180 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+}
+
+.container {
+    width:100%;
+	max-width:393px;
+    min-height:852px;
+    background-color: #1c1c1c;
+    padding:40px 28px;
+    text-align: center;
+    color: white;
+}
+
+.logo {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.logo h1 {
+    font-size: 34px;
+    line-height: 30px;
+    font-weight: 900;
+    color: white;
+}
+
+.logo span {
+    color: white;
+}
+
+.line {
+    width: 110px;
+    height: 2px;
+    background-color: #cc00ff;
+    margin: -38px auto 0;
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    width: 35px;
+    height: 35px;
+    border: 5px solid #cc00ff;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+h2 {
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input {
+     width:100%;
+    height:58px;
+
+    background:#3a3a3a;
+
+    border:4px solid #cc00ff;
+    border-radius:30px;
+
+    color:white;
+    font-size:18px;
+
+    padding:0 18px;
+
+    outline:none;
+}
+
+input::placeholder {
+    color: #9d9d9d;
+}
+
+.password-box {
+    margin-bottom:40px;
+}
+
+.password-box input {
+     width:100%;
+    height:58px;
+
+    background:#3a3a3a;
+
+    border:4px solid #cc00ff;
+    border-radius:30px;
+
+    color:white;
+    font-size:18px;
+
+    padding:0 18px;
+
+    outline:none;
+}
+
+.password-box span {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    color: #cc00ff;
+    font-size: 17px;
+}
+
+.register-btn {
+     width:250px;
+    height:65px;
+
+    border:none;
+    border-radius:35px;
+
+    background:#24ff57;
+
+    font-size:22px;
+    font-weight:700;
+
+    color:#111;
+
+    cursor:pointer;
+
+    transition:.25s;
+	
+	margin-bottom: 30px;
+}
+
+p {
+    margin-top: 11px;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+.login-btn {
+      width:250px;
+    height:65px;
+
+    border:none;
+    border-radius:35px;
+
+    background:#24ff57;
+
+    font-size:22px;
+    font-weight:700;
+
+    color:#111;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.register-btn:hover {
+    background-color: #16d851;
+}
+
+.login-btn:hover {
+    background-color: #24ff66;
+    color: black;
+}

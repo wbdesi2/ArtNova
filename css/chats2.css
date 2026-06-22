@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#151515;
+
+    color:white;
+
+    font-family:'Segoe UI',sans-serif;
+}
+
+.screen{
+
+    width:100%;
+
+    max-width:390px;
+
+    min-height:100vh;
+
+    margin:auto;
+
+    padding:15px;
+
+    position:relative;
+	
+	background-color: #1C1C1C;
+}
+
+
+.chat-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding-bottom:12px;
+
+    border-bottom:2px solid #00ff6a;
+}
+
+.back-btn{
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#2cff63;
+
+    color:black;
+
+    font-size:20px;
+}
+
+.chat-avatar{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+}
+
+.chat-user h3{
+
+    margin:0;
+
+    font-size:1.5rem;
+}
+
+.chat-user span{
+
+    color:#bdbdbd;
+}
+
+
+.chat-date{
+
+    text-align:center;
+
+    color:#bdbdbd;
+
+    margin:15px 0;
+}
+
+
+.message-card{
+
+    border:2px solid #d000ff;
+
+    border-radius:25px;
+
+    padding:12px;
+
+    background:#1f1f1f;
+}
+
+.message-user{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:10px;
+}
+
+.message-user img{
+
+    width:28px;
+
+    height:28px;
+
+    border-radius:50%;
+}
+
+.message-image{
+
+    width:100%;
+
+    border-radius:18px;
+
+    margin-bottom:10px;
+}
+
+.message-card p{
+
+    color:white;
+
+    line-height:1.4;
+}
+
+
+.chatSpace{
+
+    height:70vh;
+
+    overflow-y:auto;
+
+    padding-bottom:90px;
+}
+
+
+.chat-input{
+
+    position:fixed;
+
+    bottom:15px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:390px;
+
+    max-width:95%;
+
+    display:flex;
+
+    gap:10px;
+
+    align-items:center;
+}
+
+.chat-input button{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#d000ff;
+
+    color:white;
+
+    font-size:24px;
+}
+
+.chat-input input{
+
+    flex:1;
+
+    height:45px;
+
+    border:2px solid #d000ff;
+
+    border-radius:25px;
+
+    background:#2a2a2a;
+
+    color:white;
+
+    padding:0 15px;
+
+    outline:none;
+}
+
+.my-message{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-top:12px;
+}
+
+.my-message p{
+
+    background:#d000ff;
+
+    color:white;
+
+    padding:12px 15px;
+
+    border-radius:20px;
+
+    max-width:70%;
+
+    margin:0;
+}
+
+.chatSpace{
+
+    height:calc(100vh - 220px);
+
+    overflow-y:auto;
+
+    padding-bottom:100px;
+}
